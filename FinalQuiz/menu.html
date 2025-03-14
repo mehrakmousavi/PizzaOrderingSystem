@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pizza Order</h1>
+
+        <!-- Pizza Section -->
+        <section>
+            <h2>Pizza</h2>
+            <div class="quantity-container">
+                <label for="slice-of-pizza">Slice of Pizza ($2.00)</label>
+                <input type="checkbox" id="slice-of-pizza">
+                <input type="number" id="pizza-quantity" min="1" value="1">
+            </div>
+        </section>
+
+        <!-- Toppings Section -->
+        <section id="toppings">
+            <h2>Toppings</h2>
+            <div class="quantity-container toppings">
+                <label for="topping-pepperoni">Pepperoni ($0.25)</label>
+                <input type="checkbox" id="topping-pepperoni">
+                <input type="number" id="topping-pepperoni-quantity" min="1" value="1">
+            </div>
+            <div class="quantity-container toppings">
+                <label for="topping-meatballs">Meatballs ($0.35)</label>
+                <input type="checkbox" id="topping-meatballs">
+                <input type="number" id="topping-meatballs-quantity" min="1" value="1">
+            </div>
+            <div class="quantity-container toppings">
+                <label for="topping-mushrooms">Mushrooms ($0.40)</label>
+                <input type="checkbox" id="topping-mushrooms">
+                <input type="number" id="topping-mushrooms-quantity" min="1" value="1">
+            </div>
+            <div class="quantity-container toppings">
+                <label for="topping-olives">Olives ($0.20)</label>
+                <input type="checkbox" id="topping-olives">
+                <input type="number" id="topping-olives-quantity" min="1" value="1">
+            </div>
+        </section>
+
+        <!-- Sides Section -->
+        <section id="sides">
+            <h2>Sides</h2>
+            <div class="quantity-container sides">
+                <label for="side-potato-salad">Potato Salad ($1.25)</label>
+                <input type="checkbox" id="side-potato-salad">
+                <input type="number" id="side-potato-salad-quantity" min="1" value="1">
+            </div>
+            <div class="quantity-container sides">
+                <label for="side-hummus">Hummus ($2.50)</label>
+                <input type="checkbox" id="side-hummus">
+                <input type="number" id="side-hummus-quantity" min="1" value="1">
+            </div>
+            <div class="quantity-container sides">
+                <label for="side-caesar-salad">Caesar Salad ($3.50)</label>
+                <input type="checkbox" id="side-caesar-salad">
+                <input type="number" id="side-caesar-salad-quantity" min="1" value="1">
+            </div>
+            <div class="quantity-container sides">
+                <label for="side-garden-salad">Garden Salad ($2.25)</label>
+                <input type="checkbox" id="side-garden-salad">
+                <input type="number" id="side-garden-salad-quantity" min="1" value="1">
+            </div>
+        </section>
+
+        <!-- Drinks Section -->
+        <section>
+            <h2>Drinks</h2>
+            <div class="quantity-container">
+                <label for="drink-soda-small">Small Soda ($1.95)</label>
+                <input type="radio" name="drink" id="drink-soda-small">
+                <input type="number" id="drink-soda-small-quantity" min="1" value="1">
+            </div>
+            <div class="quantity-container">
+                <label for="drink-soda-medium">Medium Soda ($2.20)</label>
+                <input type="radio" name="drink" id="drink-soda-medium">
+                <input type="number" id="drink-soda-medium-quantity" min="1" value="1">
+            </div>
+            <div class="quantity-container">
+                <label for="drink-soda-large">Large Soda ($2.50)</label>
+                <input type="radio" name="drink" id="drink-soda-large">
+                <input type="number" id="drink-soda-large-quantity" min="1" value="1">
+            </div>
+            <div class="quantity-container">
+                <label for="drink-juice">Juice ($2.00)</label>
+                <input type="radio" name="drink" id="drink-juice">
+                <input type="number" id="drink-juice-quantity" min="1" value="1">
+            </div>
+            <div class="quantity-container">
+                <label for="drink-water">Water ($1.25)</label>
+                <input type="radio" name="drink" id="drink-water">
+                <input type="number" id="drink-water-quantity" min="1" value="1">
+            </div>
+        </section>
+
+        <!-- View Order Button -->
+        <button id="viewOrderBtn">Your Order</button>
+
+        <!-- Order Display Section -->
+        <div id="order-display" style="display:none;">
+            <ul id="order-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
