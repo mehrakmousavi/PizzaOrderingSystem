@@ -16,15 +16,15 @@ This is a simple web-based Pizza Ordering application built using **HTML**, **CS
 
 ## 📂 Project Structure
 📁 docs/
-├── menu.html
+├── index.html
 ├── style.css
 └── script.js
 
 How to run this project
 1. Clone the repository:
-2. [Click here to view the repository](https://github.com/mehrakmousavi/PizzaOrderingSystem.git)
+2. [Click here to view the repository][(https://github.com/mehrakmousavi/PizzaOrderingSystem.git)
 3. Open the project folder
-4. Double-click on menu.html to open it in your browser
+4. Double-click on index.html to open it in your browser
 
 Author
 Abdolhossein (Mehran) Mousavi 
